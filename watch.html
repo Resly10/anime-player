@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Watch</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+    <div class="logo">
+        ANIME<span>PLAY</span>
+    </div>
+
+    <a href="index.html">
+        Home
+    </a>
+
+</header>
+
+
+<main class="watch-container">
+
+
+    <div class="video-wrapper">
+
+        <video
+            id="videoPlayer"
+            controls
+            playsinline
+            preload="metadata">
+
+            Browser kamu tidak mendukung
+            video HTML5.
+
+        </video>
+
+    </div>
+
+
+    <div class="watch-info">
+
+        <h1 id="animeTitle">
+            Loading...
+        </h1>
+
+        <p id="episodeTitle">
+            Loading...
+        </p>
+
+    </div>
+
+
+    <div class="player-controls">
+
+        <button
+            id="previousButton">
+
+            ← Previous
+
+        </button>
+
+
+        <button
+            id="nextButton">
+
+            Next →
+
+        </button>
+
+    </div>
+
+
+    <div class="auto-next-box">
+
+        <label>
+
+            <input
+                type="checkbox"
+                id="autoNext"
+                checked
+            >
+
+            Auto Next Episode
+
+        </label>
+
+    </div>
+
+
+    <section>
+
+        <h2>
+            Episode List
+        </h2>
+
+        <div
+            id="watchEpisodeList"
+            class="episode-grid">
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<script src="js/data.js"></script>
+<script src="js/player.js"></script>
+
+</body>
+
+</html>
